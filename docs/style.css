@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.nav {
+    margin-left: 124px;
+    margin-right: auto;
+    /* [disabled]margin-top: 160px; */
+    margin-bottom: auto;
+}
+.div {
+    float: left;
+    clear: right;
+    width: 99px;
+    border-width: thick;
+    background-color: #FFE6B0;
+    text-align: center;
+}
+.Title {
+    text-align: left;
+    margin-left: 122px;
+    margin-right: auto;
+    padding-top: 0px;
+    margin-top: -143px;
+}
+.body {
+    margin-top: 20px;
+    margin-left: 124px;
+    background-color: #F9D995;
+    margin-right: 282px;
+    float: right;
+    display: block;
+}
+.txt {
+    padding-left: 11px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    padding-right: 11px;
+}
+.subtit {
+    margin-left: 124px;
+    margin-right: auto;
+    margin-bottom: -18px;
+    margin-top: 5px;
+}
+.gal {
+    left: auto;
+    margin-left: 1055px;
+    background-color: #F6D286;
+    margin-right: 20px;
+    display: block;
+    margin-top: 22px;
+}
+.bod {
+    background-color: #FFEECB;
+}
+.main {
+}
+.gallery {
+    float: right;
+    margin-top: -701px;
+    margin-bottom: 0px;
+    display: inline-block;
+    margin-right: auto;
+    background-color: #F9D995;
+    margin-left: auto;
+}
+.image {
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+.view {
+    text-align: center;
+    margin-top: -5px;
+}
+.carriage {
+    margin-left: 102px;
+    margin-bottom: 130px;
+    margin-top: auto;
+    margin-right: auto;
+}
