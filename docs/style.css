@@ -15,10 +15,10 @@
 }
 .Title {
     text-align: left;
-    margin-left: 122px;
+    margin: 0 auto 0 122px;
     margin-right: auto;
     padding-top: 0px;
-    margin-top: -143px;
+    margin-top: 0px;
 }
 .body {
     margin-top: 20px;
