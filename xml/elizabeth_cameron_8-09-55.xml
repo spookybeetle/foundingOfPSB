@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <header>
+        <docTitle>Letter from Elizabeth Cameron to Irvin Kochel, for Mrs. Behrend</docTitle>
+        <docType>Letter</docType>
+        <docDate> August 9, 1955</docDate>
+    </header>
+
+    <body>
+        <nonOrig style="handwriting" ink="red">File Mrs. Behrend </nonOrig>
+        <docHead>
+            <persName>
+                <persName>MRS. MARY B. BEHREND</persName>
+            </persName>
+            <address>
+                <addLine type="street">21 WEST PUTNAM AVENUE</addLine>
+                <addLine type="City, State">GREENWICH, CONNECTICUT</addLine>
+            </address>
+        </docHead>
+        <date when="1955-08-09">August 9, 1955</date>
+        <recipient>
+            <persName>Mr. Irvin Kochel</persName>
+            <name type="location">Behrend Center</name>
+            <address><name type="location">Pennsylvania State College</name> Erie,
+                Pennsylvania</address>
+        </recipient>
+        <p n="1">Dear <persName pers="Irvin Kochel">Mr. Kochel</persName>: Your letter to <persName
+                pers="Mary Behrend">Mrs. Behrend</persName> with which you enclosed the bill from
+                <persName pers="Henry Althof">Henry Althof</persName>'s Sons Company for <dolAmount
+                curency="USD">$148.00</dolAmount> covering the furnishing and installing of an iron
+            railing around the Niagara display case arrived sometime ago. I forwarded the letter to
+                <persName pers="Mary Behrend">Mrs. Behrend</persName> and held the bill here
+            awaiting her reply. We have Just had a letter from <persName pers="Mary Behrend">Mrs.
+                Behrend</persName> asking that we make out a check and send it on to you so that you
+            could present it to <persName>Mr. Althof</persName>.</p>
+        <p n="2">In <persName pers="Mary Behrend">Mrs. Behrend</persName>'s letter she asked that
+            you have a picture taken of the boat and rail and send it to her as she is interested to
+            know how it looks now. She said there is no rush about this--that it could be done when
+            the students have returned for the fall term.</p>
+        <p n="3">From what we hear from <persName pers="Mary Behrend">Mrs, Behrend</persName> and
+                <persName>Miss Wild</persName> they are having a lovely trip. They expect to return
+            to <location>Greenwich</location> about the middle of <time type="Month"
+                >September</time>.</p>
+        <closing>Sincerely yours, <signature style="handwriting" ink="black"><persName>Elizabeth A.
+                    Cameron</persName></signature> For <persName pers="Mary Behrend">Mrs.
+                Behrend</persName></closing>
+        <unsure type="Abbreviations">eac. enc.</unsure>
+        <ps>
+            <note style="handwriting" ink="black"><persName>Tom!</persName> Send with love letter
+                althuf. Thanks Sir</note>
+        </ps>
+    </body>
+</doc>
