@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema.rnc" type="application/relax-ng-compact-syntax"?>
 <doc>
     <header>
         <docTitle>Letter from Elizabeth Cameron to Irvin Kochel, for Mrs. Behrend</docTitle>
+        <docAuthor></docAuthor>
         <docType>Letter</docType>
         <docDate> August 9, 1955</docDate>
     </header>
@@ -9,9 +11,7 @@
     <body>
         <nonOrig style="handwriting" ink="red">File Mrs. Behrend </nonOrig>
         <docHead>
-            <persName>
-                <persName>MRS. MARY B. BEHREND</persName>
-            </persName>
+            <persName>MRS. MARY B. BEHREND</persName>
             <address>
                 <addLine type="street">21 WEST PUTNAM AVENUE</addLine>
                 <addLine type="City, State">GREENWICH, CONNECTICUT</addLine>
