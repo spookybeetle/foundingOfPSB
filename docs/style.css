@@ -5,16 +5,29 @@ html {
 }
 body {
     background-color: #FFEECB;
+    margin: 24px 12px 0 124px; /* ws11/2/22: left margins are placed on containing element rather than each individual.*/
+    max-width: 1080px;
+}
+@media (max-width: 1080px){
+    body {
+        margin-left: 3vw; /* ws11/2/22: Media query will help with responsiveness, giving room for smaller screens.*/
+    }
+}
+@media (max-width: 700px) {
+    body {
+        margin-left: 12px;
+    }
 }
 .Title {
     text-align: left;
-    margin: 0 auto 0 122px;
+    margin-top: 8px;
     margin-right: auto;
+    margin-bottom: 12px;
+    /*margin-left: 124px;*/
     padding-top: 0px;
-    margin-top: 0px;
 }
 nav {
-    margin-left: 124px;
+    /*margin-left: 124px;*/
     margin-right: auto;
     /* [disabled]margin-top: 160px; */
     margin-bottom: auto;
@@ -24,14 +37,13 @@ nav {
     clear: right;
     width: 99px;
     border-width: thick;
-    
     text-align: center;
 }
 .subtit {
-    margin-left: 124px;
+    /*margin-left: 124px;*/
     margin-right: auto;
     margin-bottom: 12px;
-    margin-top: 5px;
+    margin-top: 12px;
 }
 .gal {
     left: auto;
@@ -46,11 +58,10 @@ nav {
 }
 .content {
     margin-top: 0px;
-    margin-left: 124px;
+    /*margin-left: 124px;*/
     margin-right: 0px;
     background-color: #F9D995;
-    float: right;
-    display: block;
+    /* ws11/2/22: placing a min-width attribute here or on any children of .content elements is a bad idea. The flexibility it has is better than restricting it at a certain size. If the side gallery gets in the way we can  */
 }
 .txt {
     margin: 8px 12px;
