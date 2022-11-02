@@ -8,16 +8,6 @@ body {
     margin: 24px 12px 0 124px; /* ws11/2/22: left margins are placed on containing element rather than each individual.*/
     max-width: 1080px;
 }
-@media (max-width: 1080px){
-    body {
-        margin-left: 3vw; /* ws11/2/22: Media query will help with responsiveness, giving room for smaller screens.*/
-    }
-}
-@media (max-width: 700px) {
-    body {
-        margin-left: 12px;
-    }
-}
 .Title {
     text-align: left;
     margin-top: 8px;
@@ -88,4 +78,26 @@ nav {
     text-align: center;
     margin-top: 2px;
     padding-bottom: 6px;
+}
+
+
+
+/* ! ws11/2/22: these media queries really dont work well. They don't pair well with the left margins. Both should be revised for a better look.*/
+
+@media (max-width: 1080px){
+    body {
+        margin-left: 3vw; /* ws11/2/22: Media query will help with responsiveness, giving room for smaller screens.*/
+    }
+}
+@media (max-width: 700px) {
+    body {
+        margin-left: 12px;
+    }
+    /*.main {
+        display: block; 
+    }
+    .gallery {
+        display: flex;
+    }
+     * INPUT NEEDED ws11/2/22: On smaller screens .gallery takes up too much space. This can be solved by 1) moving the gallery below .content through this code or 2) scaling images so that they are responsive, we might be able to do something like .content but keep the scale rigid. */
 }
