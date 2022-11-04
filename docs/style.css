@@ -5,7 +5,11 @@ html {
 }
 body {
     background-color: #FFEECB;
-    margin: 24px 12px 0 124px; /* ws11/2/22: left margins are placed on containing element rather than each individual.*/
+    margin: 24px auto 0 auto; 
+    /* ws11/2/22: left margins are placed on containing element rather
+     *  than each individual.*/
+    /* ws11/4/22: left (and right) margins switched to auto to center
+     *  the body element */ 
     max-width: 1080px;
 }
 .Title {
