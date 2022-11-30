@@ -4,17 +4,17 @@ doc = element doc {header, body}
 
 header = element header {docTitle, docAuthor, docType, docDate, docMaterial*, notes*}
 
-docTitle = element docTitle {text}
+docTitle = element docTitle {mixed{persName*}}
 #title of the document 
-docAuthor = element docAuthor {text}
+docAuthor = element docAuthor {mixed{persName}}
 #author of the document 
 docType = element docType {text}
 #type of document 
-docDate = element docDate {text}
+docDate = element docDate {when,text}
 #date the document was created/written
 docMaterial = element docMaterial {text}
 #material the document is made of/written on 
-notes = element notes {text}
+notes = element notes {mixed{persName}}
 #extra notes on the document, or writer of the document.
 
 body = element body {mixed{nonOrig*, docHead*, (address | date | recipient | name | p | closing | unsure | ps)*}}
@@ -57,5 +57,6 @@ ink = attribute ink {text}
 type = attribute type {text}
 style = attribute style {text}
 curency = attribute curency {text}
+
 
 
