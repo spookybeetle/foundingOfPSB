@@ -14,7 +14,7 @@ docDate = element docDate {when,text}
 #date the document was created/written
 docMaterial = element docMaterial {text}
 #material the document is made of/written on 
-notes = element notes {mixed{persName}}
+notes = element notes {mixed{persName | name}}
 #extra notes on the document, or writer of the document.
 
 body = element body {mixed{nonOrig*, docHead*, (address | date | recipient | name | p | closing | unsure | ps)*}}
@@ -52,7 +52,7 @@ unsure = element unsure {type, text}
 
 n = attribute n {xsd:integer}
 pers = attribute pers {text}
-when = attribute when {xsd:date}
+when = attribute when {xsd:date | xsd:gYear | xsd:gYearMonth}
 ink = attribute ink {text}
 type = attribute type {text}
 style = attribute style {text}
