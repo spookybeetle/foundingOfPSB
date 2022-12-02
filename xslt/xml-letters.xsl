@@ -28,17 +28,16 @@
                         <meta charset="UTF-8"/>
                         <title>Behrend Letters</title>
                         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                        <link rel="stylesheet" type="text/css" href="../docs/style.css"/>
-                        <!-- ws:11/28 - Can't get the directory to work -->
+                        <link rel="stylesheet" type="text/css" href="../style.css"/>
                     </head>
                     <body>
                         <h1>
-                            <xsl:value-of select="$xmlLetter//docTitle ! normalize-space() => sort() => string-join(', ')"/>
-                            <xsl:value-of select="$currentLetter//docTitle"/>
-                            <p>
-                                Ooga Booga
-                            </p>
+                            <!--<xsl:value-of select="$xmlLetter//docTitle ! normalize-space() => sort() => string-join(', ')"/>-->
+                            <xsl:value-of select="$currentLetter//docHead"/>
                         </h1>
+                        <p>
+                            <xsl:apply-templates/>
+                        </p>
                     </body>
                 </html>
             </xsl:result-document>
