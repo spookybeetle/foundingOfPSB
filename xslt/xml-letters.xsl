@@ -22,7 +22,7 @@
             
             
             
-            <xsl:result-document method="xhtml" html-version="5" omit-xml-declaration="yes" include-content-type="no" indent="yes" href="../docs/output/{$currentLetter ! base-uri() ! tokenize(., '/')[last()] ! substring-before(., '.xml')}Output.html">
+            <xsl:result-document method="xhtml" html-version="5" omit-xml-declaration="yes" include-content-type="no" indent="yes" href="{$currentLetter ! base-uri() ! tokenize(., '/')[last()] ! substring-before(., '.xml')}Output.html"> <!-- ws:12/2/2022 - The output for html should be one of the already existing html files in /docs/output -->
                 <html>
                     <head>
                         <meta charset="UTF-8"/>
@@ -35,6 +35,9 @@
                         <h1>
                             <xsl:value-of select="$xmlLetter//docTitle ! normalize-space() => sort() => string-join(', ')"/>
                             <xsl:value-of select="$currentLetter//docTitle"/>
+                            <p>
+                                Ooga Booga
+                            </p>
                         </h1>
                     </body>
                 </html>
