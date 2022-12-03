@@ -5,12 +5,13 @@ html {
 }
 body {
     background-color: #FFEECB;
-    margin: 24px auto 0 auto; 
+    margin: 24px auto; 
     /* ws11/2/22: left margins are placed on containing element rather
      *  than each individual.*/
     /* ws11/4/22: left (and right) margins switched to auto to center
      *  the body element */ 
-    max-width: 1080px;
+    max-width: 1024px;
+    overflow-x: hidden;
 }
 .Title {
     text-align: left;
@@ -77,6 +78,8 @@ nav {
     padding-right: 7px;
     /*padding-bottom: 7px;*/
     padding-top: 7px;
+    max-width: 230px;
+    min-width: 140px;
 }
 .view {
     text-align: center;
@@ -90,12 +93,18 @@ nav {
 
 @media (max-width: 1080px){
     body {
-        margin-left: 3vw; /* ws11/2/22: Media query will help with responsiveness, giving room for smaller screens.*/
+        margin: 2.25vw; /* ws11/2/22: Media query will help with responsiveness, giving room for smaller screens.*/
+    }
+    .image {
+        width: 20vw;
     }
 }
 @media (max-width: 700px) {
     body {
-        margin-left: 12px;
+        margin: 12px;
+    }
+    .image {
+        width: 15vw;
     }
     /*.main {
         display: block; 
