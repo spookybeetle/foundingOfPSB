@@ -5,19 +5,14 @@
 
     <xsl:variable name="xmlLetter" as="document-node()+" select="collection('../xml/?select=*.xml')[base-uri()]"/>
     
-    <xsl:variable name="image" as="document-node()" select="doc('../documents/?select=*.PNG')"/>
+    <xsl:variable name="xmlImage" as="document-node()" select="doc('../documents/?select=*.PNG')"/>
 
 
     <xsl:template match="/">
         <xsl:for-each select="$xmlLetter">
             
             <xsl:variable name="currentLetter" as="document-node()" select="current()"/>
-            <!--<xsl:variable name="" select=""/>-->
-            
-            
-            
-            
-            
+            <xsl:variable name="currentImage" as="xs:string" select="$currentLetter ! base-uri() ! substring-after(., 'xml/') !substring-before(., '.xml')"/>
             
             
             <xsl:result-document method="xhtml" html-version="5" omit-xml-declaration="yes" include-content-type="no" indent="yes" href="{$currentLetter ! base-uri() ! tokenize(., '/')[last()] ! substring-before(., '.xml')}Output.html"> <!-- ws:12/2/2022 - The output for html should be one of the already existing html files in /docs/output -->
@@ -42,11 +37,11 @@
                         <p>
                             <xsl:apply-templates/>
                         </p>
+                        <img src="../../documents/{$currentImage}.PNG"/>
                     </body>
                 </html>
             </xsl:result-document>
         </xsl:for-each>
-
     </xsl:template>
 
 
