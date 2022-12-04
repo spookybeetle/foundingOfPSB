@@ -24,16 +24,19 @@ body {
 nav {
     /*margin-left: 124px;*/
     margin-right: auto;
-    /* [disabled]margin-top: 160px; */
+    /* margin-top: 160px; */
     margin-bottom: auto;
 }
-.div {
+nav a {
+    padding: 0 14px;
+}
+/*.div {
     float: left;
     clear: right;
     width: 99px;
     border-width: thick;
     text-align: center;
-}
+}*/
 .subtit {
     /*margin-left: 124px;*/
     margin-right: auto;

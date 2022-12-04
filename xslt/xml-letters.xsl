@@ -24,15 +24,21 @@
                 <html>
                     <head>
                         <meta charset="UTF-8"/>
-                        <title>Behrend Letters</title>
+                        <title><xsl:value-of select="$currentLetter//docTitle"/></title>
                         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                         <link rel="stylesheet" type="text/css" href="../style.css"/>
                     </head>
                     <body>
-                        <h1>
-                            <!--<xsl:value-of select="$xmlLetter//docTitle ! normalize-space() => sort() => string-join(', ')"/>-->
-                            <xsl:value-of select="$currentLetter//docHead"/> $
-                        </h1>
+                        <h1 class="Title">The Founding of Penn State Behrend</h1>
+                        <nav>
+                            <a href="../index.html">Home</a>
+                            <a href="../info.html">Info</a>
+                            <a href="../analysis.html">Analysis</a>
+                            <a href="../gallery.html">Gallery</a>
+                        </nav>
+                        <h2>
+                            <xsl:value-of select="$currentLetter//docTitle"/>, <xsl:value-of select="$currentLetter//docHead"/>   
+                        </h2>
                         <p>
                             <xsl:apply-templates/>
                         </p>
