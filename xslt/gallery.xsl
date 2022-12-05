@@ -14,7 +14,7 @@
         <html>
             <body>
                 <h1>
-                    <xsl:value-of select = "$xmLetter//docHead">
+                    <xsl:value-of select = "$xmlLetter//docHead">
                         
                     </xsl:value-of>
                 </h1>
