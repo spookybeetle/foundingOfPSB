@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="chart_schema.rnc" type="application/relax-ng-compact-syntax"?>
 <doc>
     <header>
-        Henry Altof's Sons Co.Henry Altof's Sons Co.</header>
+        <docTitle>Invoice</docTitle>\
+        <docAuthor>
+            <compName>Henry Altof's Sons Co.</compName>
+        </docAuthor>
+    </header>
     <body>
-        <head>
+        <docHead>
             <center>
                 <lb type="service product">Invoice</lb>
-                <lb><comp>Henry Altof's Sons Co.</comp></lb>
+                <lb><company>Henry Altof's Sons Co.</company></lb>
                 <lb><compType comp="Henry Altof's Sons Co.">Ornamental Iron and Wire Works</compType> No. 204</lb>
                 <lb><address>115-123 East 23rd Street</address></lb>
                 <lb>Erie, Pa <date when="1955-06-08">July 8, 1955</date></lb>
             </center>
-        </head>
+        </docHead>
 
         <right>
             <lb>Sold To. <name type="university">The Pa. State University</name></lb>

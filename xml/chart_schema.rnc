@@ -1,0 +1,47 @@
+start = doc 
+doc = element doc {header, body}
+#header will contain document information, body will contain the document text.
+
+header = element header {docTitle, docAuthor, docType, docDate, docMaterial*, notes*}
+
+docTitle = element docTitle {mixed{persName*}}
+#title of the document 
+docAuthor = element docAuthor {mixed{persName | compName}}
+#author of the document 
+docType = element docType {text}
+#type of document 
+docDate = element docDate {when,text}
+#date the document was created/written
+docMaterial = element docMaterial {text}
+#material the document is made of/written on 
+notes = element notes {mixed{persName | name}}
+#extra notes on the document, or writer of the document.
+
+body = element body {(right | left | chart | docHead | lb)*}
+
+right = element right {lb+}
+left = element left {lb+}
+chart = element chart {(left | right | center)*}
+docHead = element docHead {(left | right | center)*}
+center = element center {lb+}
+
+#lb used to maintain the specific structure of the documents as they contain charts.
+lb = element lb {type?, mixed{(compType | address | date | name | persName | dolAmount | addLine | company)*}}
+
+addLine = element addLine {type, text}
+dolAmount = element dolAmount {currency, text}
+persName = element persName {pers?, prob?, text}
+name = element name {type, text}
+date = element date {when, text}
+address = element address {text}
+compType = element compType {comp, text}
+compName = element compName {text}
+company = element company {text}
+
+currency = attribute currency {"USD" | "CAD"}
+type = attribute type {text}
+when = attribute when {xsd:date | xsd:integer}
+comp = attribute comp {text}
+# used for name spelling issues, typos, or any issue we are finding with the name
+prob = attribute prob {text}
+pers = attribute pers {text}

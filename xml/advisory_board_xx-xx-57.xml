@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="advisory_board_schema.rnc" type="application/relax-ng-compact-syntax"?>
 <doc>
-    <header> </header>
+    <header>
+        <docTitle>Erie Advisory Board Behrend Center</docTitle>
+        <docAuthor>
+            <persName>Unknown Author</persName>
+        </docAuthor>
+        <docType>List of persons</docType>
+        <docDate when="1957"/>
+        <notes>A list of all active and retired Behrend Center Advisory Board members as of an
+            unspecified date in 1957. Contains contact information for all active members. The
+            stongs of numbers tied to each member appear to be phone numbers, though they do not
+            line up with the current pattern for phone numbers.</notes>
+    </header>
     <body>
         <docHead><date when="1957">1957</date> Erie Advisory Board Behrend Center</docHead>
         Officers: Home Business <persLine><persName xml:id="GWW"><title>President:</title>
                 <name>Guy W. Wilson</name>
                 <title>Gen*l. Mgr. L&amp;CE</title>
-                <date when="1953-08-04">April 8, 1953</date> 553536 536 6/6/57 <address><addLine>4145 Beach
-                        Ave.,</addLine>
+                <date when="1953-08-04">April 8, 1953</date> 553536 536 6/6/57
+                        <address><addLine>4145 Beach Ave.,</addLine>
                     <addLine>Erie, Pa.</addLine></address>
                 <company>General Electric Co.</company> 27-5440 55-461</persName></persLine>
         <persLine><persName xml:id="WHJr"><title>Vice-President</title>-<name>William hamilton,
                     Jr.</name>
                 <company>Hamilton Lumber Co.</company>
-                <date when="1955">May 1955</date> 4-8690 44-536 6/6/57 (3) <address><addLine>315 W. 40
-                        St.,</addLine>
+                <date when="1955">May 1955</date> 4-8690 44-536 6/6/57 (3) <address><addLine>315 W.
+                        40 St.,</addLine>
                     <addLine>Erie, Pa.</addLine></address>
                 <address><addLine>959 W. 12 St.,</addLine>
                     <addLine>Erie, Pa.</addLine></address>

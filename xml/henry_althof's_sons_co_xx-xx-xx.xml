@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="chart_schema.rnc" type="application/relax-ng-compact-syntax"?>
 <doc>
-    <header> </header>
+    <header> 
+    <docTitle>Quotation Form</docTitle>
+    <docAuthor>
+        <compName>Henry Althof's Sons Co.</compName>
+    </docAuthor>
+    <docType>Estimation of Total/Reciept</docType>
+    <docDate when=""></docDate></header>
     <body>
         <docHead>
             <center><lb>Founded 1860</lb>

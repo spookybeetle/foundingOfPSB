@@ -1,0 +1,38 @@
+start = doc 
+doc = element doc {header, body}
+#header will contain document information, body will contain the document text.
+
+header = element header {docTitle, docAuthor, docType, docDate, docMaterial*, notes*}
+
+docTitle = element docTitle {mixed{persName*}}
+#title of the document 
+docAuthor = element docAuthor {mixed{persName}}
+#author of the document 
+docType = element docType {text}
+#type of document 
+docDate = element docDate {when,text}
+#date the document was created/written
+docMaterial = element docMaterial {text}
+#material the document is made of/written on 
+notes = element notes {mixed{(persName | name)?}}
+#extra notes on the document, or writer of the document.
+
+body = element body {mixed{docHead, persLine}}
+
+docHead = element docHead {mixed{date}}
+persLine = element persLine {mixed{persName}}
+
+persName = element persName {xml:id, mixed{(title | name | date | address | company)*}}
+
+title = element title {text}
+name = element name {text}
+date = element date {when, text}
+address = element address {addLine}
+addLine = element addLine {type, text}
+company = element company {text}
+
+when = attribute when {xsd:date | xsd:integer}
+#type attribute used to specify something unique about general element attributes 
+type = attribute type {text}
+#xml:id attribute used to tag identifier on persons
+xml:id = attribute xml:id {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK"}
