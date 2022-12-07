@@ -7,17 +7,35 @@
 
     <xsl:variable name="xmlLetter" as="document-node()+" select="collection('../xml/?select=*.xml')[base-uri()]"/>
     
-    <xsl:variable name="image" as="document-node()" select="doc('../documents/?select=*.PNG')"/>
-
+    
 
     <xsl:template match="/">
         <html>
+        <head>
+            <meta charset="UTF-8"/>
+            <title>Gallery</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <link rel="stylesheet" type="text/css" href="style.css"/>
+        </head>
             <body>
-                <h1>
-                    <xsl:value-of select = "$xmlLetter//docHead">
-                        
-                    </xsl:value-of>
-                </h1>
+                <h1 class="Title">The Founding of Penn State Behrend</h1>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="analysis.html">Analysis</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="about.html">About</a>
+                </nav>
+                <ol>
+                    <xsl:for-each select="$xmlLetter">                    
+                        <xsl:variable name="docLink" as="xs:string" select="current() ! base-uri() ! substring-after(., 'xml/') !substring-before(., '.xml')"/>
+                        <li>
+                            <a href="../docs/output/{$docLink}Output.html">
+                                <xsl:value-of select="//docTitle"/>, <xsl:value-of select="//docDate"/>
+                            </a>
+                        </li>
+                    </xsl:for-each>
+                
+                </ol>
             </body>
         </html>
       <!--  <xsl:for-each select="$xmlLetter">
