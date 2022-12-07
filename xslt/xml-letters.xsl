@@ -37,7 +37,22 @@
                         <p>
                             <xsl:apply-templates/>
                         </p>
-                        <img src="../../documents/{$currentImage}.PNG"/>
+                        
+                        <!-- ws-12/7/22: This Makes Images from an If-Else statement (xsl:choose)-->
+                        <xsl:choose>
+                            <xsl:when test="$currentLetter//page/@n">
+                                <!--We have multiple images: <xsl:value-of select="$currentLetter//page/@n"/>--> 
+                                <xsl:for-each select="$currentLetter//page/@n">
+                                    <img src="../../documents/{$currentImage}_page{current()}.PNG"/>
+                                </xsl:for-each>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <img src="../../documents/{$currentImage}.PNG"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+
+
+
                     </body>
                 </html>
             </xsl:result-document>
