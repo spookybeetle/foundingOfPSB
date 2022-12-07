@@ -22,7 +22,7 @@ body = element body {mixed{docHead, persLine}}
 docHead = element docHead {mixed{date}}
 persLine = element persLine {mixed{persName}}
 
-persName = element persName {xml:id, mixed{(title | name | date | address | company)*}}
+persName = element persName {xmlid, mixed{(title | name | date | address | company)*}}
 
 title = element title {text}
 name = element name {text}
@@ -35,4 +35,4 @@ when = attribute when {xsd:date | xsd:integer}
 #type attribute used to specify something unique about general element attributes 
 type = attribute type {text}
 #xml:id attribute used to tag identifier on persons
-xml:id = attribute xml:id {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK"}
+xmlid = attribute xml:id {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK"}
