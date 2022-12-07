@@ -27,7 +27,6 @@
                         <h1 class="Title">The Founding of Penn State Behrend</h1>
                         <nav>
                             <a href="../index.html">Home</a>
-                            <a href="../info.html">Info</a>
                             <a href="../analysis.html">Analysis</a>
                             <a href="../gallery.html">Gallery</a>
                             <a href="../about.html">Gallery</a>
