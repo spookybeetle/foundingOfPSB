@@ -29,7 +29,7 @@
                             <a href="../index.html">Home</a>
                             <a href="../analysis.html">Analysis</a>
                             <a href="../gallery.html">Gallery</a>
-                            <a href="../about.html">Gallery</a>
+                            <a href="../about.html">About the Team</a>
                         </nav>
                         <h2>
                             <xsl:value-of select="$currentLetter//docTitle"/>, <xsl:value-of select="$currentLetter//docHead"/>   

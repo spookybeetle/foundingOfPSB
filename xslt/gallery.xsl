@@ -23,7 +23,7 @@
                     <a href="index.html">Home</a>
                     <a href="analysis.html">Analysis</a>
                     <a href="gallery.html">Gallery</a>
-                    <a href="about.html">About</a>
+                    <a href="about.html">About the Team</a>
                 </nav>
                 <ol>
                     <xsl:for-each select="$xmlLetter">                    
