@@ -17,7 +17,7 @@ docMaterial = element docMaterial {text}
 notes = element notes {mixed{(persName | name)?}}
 #extra notes on the document, or writer of the document.
 
-body = element body {mixed{docHead, persLine}}
+body = element body {mixed{docHead, persLine+}}
 
 docHead = element docHead {mixed{date}}
 persLine = element persLine {mixed{persName}}
@@ -27,7 +27,7 @@ persName = element persName {xmlid, mixed{(title | name | date | address | compa
 title = element title {text}
 name = element name {text}
 date = element date {when, text}
-address = element address {addLine}
+address = element address {addLine*}
 addLine = element addLine {type, text}
 company = element company {text}
 
@@ -35,4 +35,4 @@ when = attribute when {xsd:date | xsd:integer}
 #type attribute used to specify something unique about general element attributes 
 type = attribute type {text}
 #xml:id attribute used to tag identifier on persons
-xmlid = attribute xml:id {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK"}
+xmlid = attribute xmlid {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK" | "Unknown"}

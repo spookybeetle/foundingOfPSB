@@ -2,10 +2,12 @@
 <?xml-model href="chart_schema.rnc" type="application/relax-ng-compact-syntax"?>
 <doc>
     <header>
-        <docTitle>Invoice</docTitle>\
+        <docTitle>Invoice</docTitle>
         <docAuthor>
             <compName>Henry Altof's Sons Co.</compName>
         </docAuthor>
+        <docType>Invoicing/Reciept</docType>
+        <docDate when="1955-06-08">1955-06-08</docDate>
     </header>
     <body>
         <docHead>

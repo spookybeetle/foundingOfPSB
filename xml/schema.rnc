@@ -14,7 +14,7 @@ docDate = element docDate {when,text}
 #date the document was created/written
 docMaterial = element docMaterial {text}
 #material the document is made of/written on 
-notes = element notes {mixed{persName | name}}
+notes = element notes {mixed{persName* | name}}
 #extra notes on the document, or writer of the document.
 
 body = element body {mixed{nonOrig*, docHead*, (address | date | recipient | name | p | closing | unsure | ps)*}}
@@ -31,7 +31,7 @@ date = element date {when, text}
 #element in above line
 recipient = element recipient {persName, name*, address}
 
-persName = element persName {pers?, text}
+persName = element persName {pers?, xmlid?, text}
 #element in above line
 
 name = element name {type?, text}
@@ -57,6 +57,7 @@ ink = attribute ink {text}
 type = attribute type {text}
 style = attribute style {text}
 curency = attribute curency {text}
+xmlid = attribute xmlid {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK" | "Unknown"}
 
 
 
