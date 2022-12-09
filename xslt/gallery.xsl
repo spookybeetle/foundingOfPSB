@@ -29,7 +29,8 @@
                     <xsl:for-each select="$xmlLetter">                    
                         <xsl:variable name="docLink" as="xs:string" select="current() ! base-uri() ! substring-after(., 'xml/') !substring-before(., '.xml')"/>
                         <li>
-                            <a href="../docs/output/{$docLink}Output.html">
+                            <a href="output/{$docLink}Output.html">
+                           <!-- ebb:  -->
                                 <xsl:value-of select="//docTitle"/>, <xsl:value-of select="//docDate"/>
                             </a>
                         </li>
