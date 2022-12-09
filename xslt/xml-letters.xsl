@@ -43,11 +43,11 @@
                             <xsl:when test="$currentLetter//page/@n">
                                 <!--We have multiple images: <xsl:value-of select="$currentLetter//page/@n"/>--> 
                                 <xsl:for-each select="$currentLetter//page/@n">
-                                    <img src="../documents/{$currentImage}_page{current()}.PNG"/>
+                                    <img src="documents/{$currentImage}_page{current()}.PNG"/>
                                 </xsl:for-each>
                             </xsl:when>
                             <xsl:otherwise>
-                                <img src="../documents/{$currentImage}.PNG"/>
+                                <img src="documents/{$currentImage}.PNG"/>
                             </xsl:otherwise>
                         </xsl:choose>
 
