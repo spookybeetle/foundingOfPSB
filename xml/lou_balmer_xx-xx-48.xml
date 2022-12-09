@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="schema.rnc" type="application/relax-ng-compact-syntax"?>
 <doc>
-    <header> </header>
+    <header>
+        <docTitle>Erie Advisory Board Behrend Center</docTitle>
+        <docAuthor>
+            <persName>Unknown Author</persName>
+        </docAuthor>
+        <docType>List of persons</docType>
+        <docDate when="1948"/>
+        <notes>A list of all active and retired Behrend Center Advisory Board members as of an
+            unspecified date in 1957. Contains contact information for all active members. The
+            stongs of numbers tied to each member appear to be phone numbers, though they do not
+            line up with the current pattern for phone numbers.</notes>
+    </header>
     <body>
         <page n="1">
             <docHead>
