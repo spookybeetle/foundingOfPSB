@@ -4,10 +4,16 @@
     <header>
         <docTitle>Notes from First Year</docTitle>
         <docAuthor>
-            <persName>Lou Balmer</persName>
+            <persName pers="#LWB">Lou Balmer</persName>
         </docAuthor>
         <docType>Notes</docType>
         <docDate when="1948">1948</docDate>
+        <listImages>
+            <image href="lou_balmer_xx-xx-48_page1.PNG"/>
+            <image href="lou_balmer_xx-xx-48_page2.PNG"/>
+            <image href="lou_balmer_xx-xx-48_page3.PNG"/>
+            <image href="lou_balmer_xx-xx-48_page4.PNG"/>
+        </listImages>
     </header>
     <body>
         <docHead>

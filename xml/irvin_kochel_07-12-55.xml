@@ -7,6 +7,9 @@
         <docType>Letter</docType>
         <docDate when="1955-07-12">July 12, 1955</docDate>
         <docMaterial>Typewriter Paper</docMaterial>
+        <listImages>
+            <image href="irvin_kochel_07-12-55.PNG"/>
+        </listImages>
         <notes/>
     </header>
 

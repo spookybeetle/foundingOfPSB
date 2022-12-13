@@ -2,7 +2,10 @@ start = doc
 doc = element doc {header, body}
 #header will contain document information, body will contain the document text.
 
-header = element header {docTitle, docAuthor, docType, docDate?, docMaterial*, notes*}
+header = element header {docTitle, docAuthor, docType, docDate, docMaterial*, listImages, notes*}
+listImages = element listImages {image+}
+image = element image {href, empty}
+href = attribute href {xsd:anyURI}
 
 docTitle = element docTitle {mixed{persName*}}
 #title of the document 
@@ -43,7 +46,7 @@ company = element company {text}
 
 currency = attribute currency {"USD" | "CAD"}
 type = attribute type {text}
-when = attribute when {xsd:date | xsd:integer}
+when = attribute when {xsd:date | xsd:integer | text}
 comp = attribute comp {text}
 # used for name spelling issues, typos, or any issue we are finding with the name
 prob = attribute prob {text}
