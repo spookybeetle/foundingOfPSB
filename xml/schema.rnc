@@ -39,7 +39,7 @@ name = element name {type?, text}
 p = element p {n, mixed{(persName | location | time | name | dolAmount)*}}
 #element in above line
 
-location = element location {text}
+location = element location {type?, text}
 time = element time {type, text}
 dolAmount = element dolAmount {curency, text}
 
