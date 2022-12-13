@@ -17,21 +17,23 @@ docMaterial = element docMaterial {text}
 notes = element notes {mixed{persName | name}}
 #extra notes on the document, or writer of the document.
 
-body = element body {(right | left | chart | docHead | lb)*, text, handwriting*}
+body = element body {(right | left | chart | docHead | lb | center)*, text, handwriting*}
 
 right = element right {lb+}
 left = element left {lb+}
 chart = element chart {(left | right | center)*}
 docHead = element docHead {(left | right | center)*}
-center = element center {lb+}
+center = element center {(meas | lb)*}
+meas = element meas {lb+}
 
 #lb used to maintain the specific structure of the documents as they contain charts.
-lb = element lb {handwriting*, type?, mixed{(compType | address | date | name | persName | dolAmount | addLine | company)*}}
+lb = element lb {type?, mixed{(handwriting | compType | address | date | name | persName | dolAmount | addLine | company)*}}
 
-handwriting = element handwriting {text}
+handwriting = element handwriting {type?, ink?, mixed{persName*}}
+ink = attribute ink {text}
 addLine = element addLine {type, text}
 dolAmount = element dolAmount {currency, text}
-persName = element persName {pers?, prob?, text}
+persName = element persName {pers, prob?, text}
 name = element name {type, text}
 date = element date {when, text}
 address = element address {text}
@@ -45,4 +47,4 @@ when = attribute when {xsd:date | xsd:integer}
 comp = attribute comp {text}
 # used for name spelling issues, typos, or any issue we are finding with the name
 prob = attribute prob {text}
-pers = attribute pers {text}
+pers = attribute pers { "#GWW" | "#WHJr" | "#AW" | "#BEC" | "#MB" | "#EWN" | "#WPG" | "#JCS" | "#NAC" | "#HCM" | "#WMC" | "#Emmet" | "#ETK" | "#HLK" | "#HSO" | "#CDK" | "#ELK" | "#IHK" | "#HAA" | "#RHA" | "#LWB" | "#Unknown"}

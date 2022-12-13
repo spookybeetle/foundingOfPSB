@@ -18,12 +18,16 @@
                 <company>vice president of the Henry Althof's Sons Company</company>, a manufacturing company in Erie, PA.
               His son, <persName xml:id="RHA">Richard H. Althof</persName> signed an invoice made by the family's company, represented in this archive.
             </note>
+            <note>One very important person mentioned in the letters is <persName xml:id="LWB">Louis Whiteside Balmer</persName>, who was Penn State Behrend’s first
+            chemistry professor.</note>
+
             
         </notes>
     </header>
     <body>
         <docHead><date when="1957">1957</date> Erie Advisory Board Behrend Center</docHead>
-        Officers: Home Business <persLine><persName xml:id="GWW"><title>President:</title>
+        <docHeadTable><colHead pos="1">Officers:</colHead> <colHead pos="4">Home</colHead> <colHead pos="5">Business</colHead></docHeadTable>
+        <persLine><persName xml:id="GWW"><title>President:</title>
                 <name>Guy W. Wilson</name>
                 <title>Gen*l. Mgr. L&amp;CE</title>
                 <date when="1953-08-04">April 8, 1953</date> 553536 536 6/6/57

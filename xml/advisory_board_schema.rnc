@@ -18,7 +18,10 @@ notes = element notes {note+}
 #extra notes on the document, or writer of the document.
 note = element note {mixed{(persName | name | company)*}}
 
-body = element body {mixed{docHead, persLine+}}
+body = element body {mixed{docHead, docHeadTable, persLine+}}
+docHeadTable = element docHeadTable {colHead+}
+colHead = element colHead {pos, text}
+pos = attribute pos {xsd:integer}
 
 docHead = element docHead {mixed{date}}
 persLine = element persLine {mixed{persName}}
@@ -36,4 +39,4 @@ when = attribute when {xsd:date | xsd:integer}
 #type attribute used to specify something unique about general element attributes 
 type = attribute type {text}
 #xml:id attribute used to tag identifier on persons
-xmlid = attribute xml:id {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK" | "HAA" | "RHA" | "Unknown"}
+xmlid = attribute xml:id {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK" | "HAA" | "RHA" | "LWB" | "Unknown"}

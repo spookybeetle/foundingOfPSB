@@ -51,13 +51,9 @@ note = element note {style, ink, persName*, text}
 unsure = element unsure {type, text}
 
 n = attribute n {xsd:integer}
-pers = attribute pers { "#GWW" | "#WHJr" | "#AW" | "#BEC" | "#MB" | "#EWN" | "#WPG" | "#JCS" | "#NAC" | "#HCM" | "#WMC" | "#Emmet" | "#ETK" | "#HLK" | "#HSO" | "#CDK" | "#ELK" | "#IHK" | "#HAA" | "#RHA" | "#Unknown"}
+pers = attribute pers { "#GWW" | "#WHJr" | "#AW" | "#BEC" | "#MB" | "#EWN" | "#WPG" | "#JCS" | "#NAC" | "#HCM" | "#WMC" | "#Emmet" | "#ETK" | "#HLK" | "#HSO" | "#CDK" | "#ELK" | "#IHK" | "#HAA" | "#RHA" | "#LWB" | "#Unknown"}
 when = attribute when {xsd:date | xsd:gYear | xsd:gYearMonth}
 ink = attribute ink {text}
 type = attribute type {text}
 style = attribute style {text}
 curency = attribute curency {text}
-xmlid = attribute xmlid {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK" | "Unknown"}
-
-
-
