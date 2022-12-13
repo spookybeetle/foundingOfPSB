@@ -51,7 +51,7 @@ note = element note {style, ink, persName*, text}
 unsure = element unsure {type, text}
 
 n = attribute n {xsd:integer}
-pers = attribute pers {text}
+pers = attribute pers { "#GWW" | "#WHJr" | "#AW" | "#BEC" | "#MB" | "#EWN" | "#WPG" | "#JCS" | "#NAC" | "#HCM" | "#WMC" | "#Emmet" | "#ETK" | "#HLK" | "#HSO" | "#CDK" | "#ELK" | "#IHK" | "#HAA" | "#RHA" | "#Unknown"}
 when = attribute when {xsd:date | xsd:gYear | xsd:gYearMonth}
 ink = attribute ink {text}
 type = attribute type {text}
