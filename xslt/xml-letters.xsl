@@ -3,9 +3,9 @@
 
     <xsl:output method="xhtml" html-version="5" omit-xml-declaration="yes" include-content-type="no" indent="yes"/>
 
-    <xsl:variable name="xmlLetter" as="document-node()+" select="collection('../xml/?select=*.xml')[base-uri()]"/>
+    <xsl:variable name="xmlLetter" as="document-node()+" select="collection('../xml/?select=*.xml')[not(contains(base-uri(), 'advisory'))]"/>
     
-    <xsl:variable name="xmlImage" as="document-node()" select="doc('../documents/?select=*.PNG')"/>
+    <xsl:variable name="xmlImage" as="document-node()+" select="collection('../docs/documents/?select=*.PNG')"/>
 
 
     <xsl:template match="/">
@@ -38,10 +38,14 @@
                             <xsl:apply-templates/>
                         </div>
                         
+                        <img src="documents/{$currentImage}.PNG"/>
+                        
+                        
+                        
                         <!-- ws-12/7/22: This Makes Images from an If-Else statement (xsl:choose)-->
-                        <xsl:choose>
+                        <!--<xsl:choose>
                             <xsl:when test="$currentLetter//page/@n">
-                                <!--We have multiple images: <xsl:value-of select="$currentLetter//page/@n"/>--> 
+                                <!-\-We have multiple images: <xsl:value-of select="$currentLetter//page/@n"/>-\-> 
                                 <xsl:for-each select="$currentLetter//page/@n">
                                     <img src="documents/{$currentImage}_page{current()}.PNG"/>
                                 </xsl:for-each>
@@ -49,7 +53,7 @@
                             <xsl:otherwise>
                                 <img src="documents/{$currentImage}.PNG"/>
                             </xsl:otherwise>
-                        </xsl:choose>
+                        </xsl:choose>-->
                     </body>
                 </html>
             </xsl:result-document>
