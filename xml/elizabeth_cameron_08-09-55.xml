@@ -2,18 +2,18 @@
 <?xml-model href="schema.rnc" type="application/relax-ng-compact-syntax"?>
 <doc>
     <header>
-        <docTitle>Letter from <persName>Elizabeth Cameron</persName> to <persName>Irvin Kochel</persName>, for <persName>Mrs. Behrend</persName></docTitle>
-        <docAuthor><persName>Elizabeth Cameron</persName></docAuthor>
+        <docTitle>Letter from <persName pers = "#Unknown">Elizabeth Cameron</persName> to <persName pers = "#IHK">Irvin Kochel</persName>, for <persName pers = "#MB">Mrs. Behrend</persName></docTitle>
+        <docAuthor><persName pers = "#Unknown">Elizabeth Cameron</persName></docAuthor>
         <docType>Letter</docType>
         <docDate when="1955-09-08"> August 9, 1955</docDate>
         <docMaterial>Typewriter paper</docMaterial>
-        <notes>This is a letter written on behalf of <persName pers="Mary Behrend" xmlid="MB">Mary Behrend</persName> by <persName>Elizabeth Cameron</persName> to <persName pers="Irvin Kochel" xmlid="IHK">Irvin Kochel</persName>.</notes>
+        <notes>This is a letter written on behalf of <persName pers="#MB">Mary Behrend</persName> by <persName pers = "#Unknown">Elizabeth Cameron</persName> to <persName pers="#IHK">Irvin Kochel</persName>.</notes>
     </header>
 
     <body>
         <nonOrig style="handwriting" ink="red">File Mrs. Behrend </nonOrig>
         <docHead>
-            <persName>MRS. MARY B. BEHREND</persName>
+            <persName pers="#MB">MRS. MARY B. BEHREND</persName>
             <address>
                 <addLine type="street">21 WEST PUTNAM AVENUE</addLine>
                 <addLine type="City, State">GREENWICH, CONNECTICUT</addLine>
@@ -21,34 +21,34 @@
         </docHead>
         <date when="1955-08-09">August 9, 1955</date>
         <recipient>
-            <persName>Mr. Irvin Kochel</persName>
+            <persName pers = "#IHK">Mr. Irvin Kochel</persName>
             <name type="location">Behrend Center</name>
             <address><name type="location">Pennsylvania State College</name> Erie,
                 Pennsylvania</address>
         </recipient>
-        <p n="1">Dear <persName pers="Irvin Kochel">Mr. Kochel</persName>: Your letter to <persName
-                pers="Mary Behrend">Mrs. Behrend</persName> with which you enclosed the bill from
-                <persName pers="Henry Althof">Henry Althof</persName>'s Sons Company for <dolAmount
+        <p n="1">Dear <persName pers="#IHK">Mr. Kochel</persName>: Your letter to <persName
+                pers="#MB">Mrs. Behrend</persName> with which you enclosed the bill from
+                <persName pers="#HAA">Henry Althof</persName>'s Sons Company for <dolAmount
                 curency="USD">$148.00</dolAmount> covering the furnishing and installing of an iron
             railing around the Niagara display case arrived sometime ago. I forwarded the letter to
-                <persName pers="Mary Behrend">Mrs. Behrend</persName> and held the bill here
-            awaiting her reply. We have Just had a letter from <persName pers="Mary Behrend">Mrs.
+                <persName pers="#MB">Mrs. Behrend</persName> and held the bill here
+            awaiting her reply. We have Just had a letter from <persName pers="#MB">Mrs.
                 Behrend</persName> asking that we make out a check and send it on to you so that you
-            could present it to <persName>Mr. Althof</persName>.</p>
-        <p n="2">In <persName pers="Mary Behrend">Mrs. Behrend</persName>'s letter she asked that
+            could present it to <persName pers = "#HAA">Mr. Althof</persName>.</p>
+        <p n="2">In <persName pers="#MB">Mrs. Behrend</persName>'s letter she asked that
             you have a picture taken of the boat and rail and send it to her as she is interested to
             know how it looks now. She said there is no rush about this--that it could be done when
             the students have returned for the fall term.</p>
-        <p n="3">From what we hear from <persName pers="Mary Behrend">Mrs, Behrend</persName> and
-                <persName>Miss Wild</persName> they are having a lovely trip. They expect to return
+        <p n="3">From what we hear from <persName pers="#MB">Mrs, Behrend</persName> and
+                <persName pers="#Unknown">Miss Wild</persName> they are having a lovely trip. They expect to return
             to <location>Greenwich</location> about the middle of <time type="Month"
                 >September</time>.</p>
-        <closing>Sincerely yours, <signature style="handwriting" ink="black"><persName>Elizabeth A.
-                    Cameron</persName></signature> For <persName pers="Mary Behrend">Mrs.
+        <closing>Sincerely yours, <signature style="handwriting" ink="black"><persName pers="#Unknown">Elizabeth A.
+                    Cameron</persName></signature> For <persName pers="#MB">Mrs.
                 Behrend</persName></closing>
         <unsure type="Abbreviations">eac. enc.</unsure>
         <ps>
-            <note style="handwriting" ink="black"><persName>Tom!</persName> Send with love letter
+            <note style="handwriting" ink="black"><persName pers = "#Unknown">Tom!</persName> Send with love letter
                 althuf. Thanks Sir</note>
         </ps>
     </body>
