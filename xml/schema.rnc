@@ -17,7 +17,7 @@ docMaterial = element docMaterial {text}
 notes = element notes {mixed{persName* | name}}
 #extra notes on the document, or writer of the document.
 
-body = element body {mixed{nonOrig*, docHead*, (address | date | recipient | name | p | closing | unsure | ps)*}}
+body = element body {mixed{nonOrig*, docHead*, (address | date | recipient | name | p | closing | unsure | ps | lb)*}}
 
 #markup made on text for documentation.
 nonOrig = element nonOrig {style*, type*, ink*, text}

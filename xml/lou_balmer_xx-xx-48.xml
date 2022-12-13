@@ -10,7 +10,7 @@
         <docDate when="1948">1948</docDate>
     </header>
     <body>
-        <page n="1">
+        
             <docHead>
                 <lb>1948 Notes from First year</lb>
                 <lb><persName pers="#LWB">Lou Balmer</persName> I</lb>
@@ -37,9 +37,9 @@
             <lb>Spoke to thhe new faculty before the classes began</lb>
             <lb>and told them that.... Their "responsibility as</lb>
             <lb>members was to teach and relate to the community.</lb>
-        </page>
+        
 
-        <page n="2">
+        
             <docHead> <persName pers="#LWB">Balmer</persName> II </docHead>
             <lb>3. = Girls wore skirts at supper + men who came</lb>
             <lb>to eat had to wear coats.</lb>
@@ -63,9 +63,9 @@
             <lb><strikeThrough>Bor</strikeThrough> Biology <unclear/> build in dog Kennel.</lb>
             <lb>No tutoring centers for <unclear/>. Went directly to</lb>
             <lb>faculty</lb>
-        </page>
+        
 
-        <page n="3">
+        
             <docHead> <persName pers="#LWB">Balmer</persName> III </docHead>
             <lb>7. = SPCH CLINIC = base of homes. _They were not students</lb>
             <lb>They were trained to speak correctly.</lb>
@@ -86,9 +86,9 @@
             <lb><unclear/> was automatic after <unclear/></lb>
             <lb>No evaluation committees - Head of dept made the</lb>
             <lb>decision</lb>
-        </page>
+        
 
-        <page n="4">
+        
             <docHead> <persName pers="#LWB">Balmer</persName> IV </docHead>
             <lb>14 ..... to prevent the effects of the union, faculty</lb>
             <lb>members had to be in on a decision <unclear/></lb>
@@ -98,6 +98,6 @@
             <lb>One got tenure after several years......</lb>
             <lb>The first year <unclear/> - there were a </lb>
             <lb><unclear/> boat.</lb>
-        </page>
+        
     </body>
 </doc>
