@@ -4,7 +4,7 @@
     <header>
         <docTitle>Erie Advisory Board Behrend Center</docTitle>
         <docAuthor>
-            <persName xmlid="Unknown">Unknown Author</persName>
+            <persName xml:id="Unknown">Unknown Author</persName>
         </docAuthor>
         <docType>List of persons</docType>
         <docDate when="1957">1957</docDate>
@@ -15,14 +15,14 @@
     </header>
     <body>
         <docHead><date when="1957">1957</date> Erie Advisory Board Behrend Center</docHead>
-        Officers: Home Business <persLine><persName xmlid="GWW"><title>President:</title>
+        Officers: Home Business <persLine><persName xml:id="GWW"><title>President:</title>
                 <name>Guy W. Wilson</name>
                 <title>Gen*l. Mgr. L&amp;CE</title>
                 <date when="1953-08-04">April 8, 1953</date> 553536 536 6/6/57
                         <address><addLine type="street">4145 Beach Ave.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address>
                 <company>General Electric Co.</company> 27-5440 55-461</persName></persLine>
-        <persLine><persName xmlid="WHJr"><title>Vice-President</title>-<name>William hamilton,
+        <persLine><persName xml:id="WHJr"><title>Vice-President</title>-<name>William hamilton,
                     Jr.</name>
                 <company>Hamilton Lumber Co.</company>
                 <date when="1955">May 1955</date> 4-8690 44-536 6/6/57 (3) <address><addLine type="street">315 W.
@@ -31,7 +31,7 @@
                 <address><addLine type="street">959 W. 12 St.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address>
             </persName></persLine>
-        <persLine><persName xmlid="AW"><title>Secretary:</title>
+        <persLine><persName xml:id="AW"><title>Secretary:</title>
                 <name>Allyn Write</name>
                 <title>Vice President</title> org 22-762 23-693 6/6/57 (3) <address><addLine type="street">333 W.
                         7 St.,</addLine>
@@ -40,76 +40,76 @@
                 <address><addLine type="street">1425 W. St.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address>
             </persName></persLine>
-        <persLine><persName xmlid="BEC"><title>Treasurer:</title>
+        <persLine><persName xml:id="BEC"><title>Treasurer:</title>
                 <name>Bertram E. Claridge.</name>
                 <title>Vice President</title> org 34-714 47-101 6/6/57 (3) <address><addLine type="street">R. D.
                         1, Wolf Rd.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address>
                 <company>Hammermill Paper Co.</company>
             </persName></persLine>
-        <persLine><persName xmlid="MB"><name>Mrs. Mary B. Behrend</name>
+        <persLine><persName xml:id="MB"><name>Mrs. Mary B. Behrend</name>
                 <address><addLine type="street">21 W. Putnam Ave.</addLine>
                     <addLine type="City,State">Greenwich, Conn.</addLine></address>
             </persName></persLine>
-        <persLine><persName xmlid="EWN"><name>Edwin W. Nick</name> Retured org 48 28-1494 24-242
+        <persLine><persName xml:id="EWN"><name>Edwin W. Nick</name> Retured org 48 28-1494 24-242
                         <address><addLine type="street">2020 S. Shore Dr.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address></persName></persLine>
-        <persLine><persName xmlid="WPG"><name>W. Pitt Gifford</name>
+        <persLine><persName xml:id="WPG"><name>W. Pitt Gifford</name>
                 <title>Attorney-at-Law</title> org 78-159 26-745 <address><addLine type="street">2166 S. Shore
                         Dr.,</addLine>
                     <addLine type="City,State">Erie, Pa. </addLine><addLine type="street">615 Masonic Bldg.</addLine></address>
                 37714</persName></persLine>
-        <persLine><persName xmlid="JCS">(3) 1953 <name>Jerry C. Stokes</name>
+        <persLine><persName xml:id="JCS">(3) 1953 <name>Jerry C. Stokes</name>
                 <title>President</title> nov. 1953 99-2587 57-561 <address><addLine type="street">1126 Hilltop
                         Rd.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine>
                 </address><company>Perry Plastics, Inc.</company> 62961 <address><addLine type="street">3409 W. 14
                         St.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address></persName></persLine>
-        <persLine><persName xmlid="NAC"><name>N. A. Carlson</name>
+        <persLine><persName xml:id="NAC"><name>N. A. Carlson</name>
                 <title>President</title> org 24-612 83-134 <address><addLine type="street">4030 Coohran
                         St.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address>
                 <company>Erie Motor Systems</company>
                 <address><addLine type="street">2420 Pearl Ave.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address></persName></persLine>
-        <persLine><persName xmlid="HCM"><name>H. C. Mitchall</name>
+        <persLine><persName xml:id="HCM"><name>H. C. Mitchall</name>
                 <title>Retired</title> 22-428 <address><addLine type="street">917 W. 6 St.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address></persName></persLine>
-        <persLine><persName xmlid="WMC">(3) 1953 <name>William M. Conner</name> Insurance Nov 1953
+        <persLine><persName xml:id="WMC">(3) 1953 <name>William M. Conner</name> Insurance Nov 1953
                 98-270 24-585 <address><addLine type="street">1135 Chestnut Hill. Dr.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address> 303-4 Palanco Hdwe. Bldg. Erie, Pa.
             </persName></persLine>
-        <persLine><persName xmlid="Emmet"><name>H/L/R Emmet</name>
+        <persLine><persName xml:id="Emmet"><name>H/L/R Emmet</name>
                 <title>Retired</title> org 91-135 <address><addLine type="street">R.D. 4, Arbuckle Rd.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address>
             </persName></persLine>
-        <persLine><persName xmlid="ETK"><name>Ellis T. Knobloch</name>
+        <persLine><persName xml:id="ETK"><name>Ellis T. Knobloch</name>
                 <title>Pres.</title> &amp; <title>Gen*l Mgr.</title> org 23-357 23-601
                         <address><addLine type="street">230 Superior Av.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address>
                 <company>Union Iron Works </company>
                 <address><addLine type="street">1500 Cascade St.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address></persName></persLine>
-        <persLine><persName xmlid="HLK">(3) 1953 <name>Howard L. Kelly</name>
+        <persLine><persName xml:id="HLK">(3) 1953 <name>Howard L. Kelly</name>
                 <title>Secretary_Executive Dir.</title> 25-4291 25-667 <address><addLine type="street">218 Gridley
                         Ave.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address>
                 <company>Mfgrs. Assoc. of Erie</company>
                 <address><addLine type="street">404 Ariel Bldg.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine></address></persName></persLine>
-        <persLine><persName xmlid="HSO"><name>Mrs. Harold S. Ogden</name>
+        <persLine><persName xml:id="HSO"><name>Mrs. Harold S. Ogden</name>
                 <address><addLine type="street">1937 S. Shore
                     Drive,</addLine><addLine type="City,State">Erie,Pa.</addLine></address>
             77-381</persName></persLine>
-        <persLine><persName xmlid="CDK"><name>Mrs. C. Dean Klahr</name>
+        <persLine><persName xml:id="CDK"><name>Mrs. C. Dean Klahr</name>
                 <address><addLine type="street">1608 S. Shore Drive,</addLine>
                     <addLine type="City,State">Erie,Pa.</addLine></address> 24-843</persName>
         </persLine>
-        <persLine><persName xmlid="ELK"><title>Ex-Officier:</title>
+        <persLine><persName xml:id="ELK"><title>Ex-Officier:</title>
                 <name>Mr. E. L. Keller</name>, <title>Director General</title>
             Extension</persName></persLine>
-        <persLine><persName xmlid="IHK"><name>Mr. Irvin H. Kochel</name>, <title>Administrative
+        <persLine><persName xml:id="IHK"><name>Mr. Irvin H. Kochel</name>, <title>Administrative
                     Head</title>, Behrend Center</persName></persLine>
     </body>
 </doc>

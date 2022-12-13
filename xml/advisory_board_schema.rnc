@@ -35,4 +35,4 @@ when = attribute when {xsd:date | xsd:integer}
 #type attribute used to specify something unique about general element attributes 
 type = attribute type {text}
 #xml:id attribute used to tag identifier on persons
-xmlid = attribute xmlid {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK" | "Unknown"}
+xmlid = attribute xml:id {"GWW" | "WHJr" | "AW" | "BEC" | "MB" | "EWN" | "WPG" | "JCS" | "NAC" | "HCM" | "WMC" | "Emmet" | "ETK" | "HLK" | "HSO" | "CDK" | "ELK" | "IHK" | "Unknown"}
