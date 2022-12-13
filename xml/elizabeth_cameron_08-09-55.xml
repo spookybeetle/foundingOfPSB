@@ -7,6 +7,9 @@
         <docType>Letter</docType>
         <docDate when="1955-09-08"> August 9, 1955</docDate>
         <docMaterial>Typewriter paper</docMaterial>
+        <listImages>
+            <image href="documents/elizabeth_cameron_08-09-55.PNG"/>
+        </listImages>
         <notes>This is a letter written on behalf of <persName pers="#MB">Mary Behrend</persName> by <persName pers = "#Unknown">Elizabeth Cameron</persName> to <persName pers="#IHK">Irvin Kochel</persName>.</notes>
     </header>
 
