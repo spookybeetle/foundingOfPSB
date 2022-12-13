@@ -17,17 +17,18 @@ docMaterial = element docMaterial {text}
 notes = element notes {mixed{persName* | name}}
 #extra notes on the document, or writer of the document.
 
-body = element body {mixed{nonOrig*, docHead*, (address | date | recipient | name | p | closing | unsure | ps | lb)*}}
+body = element body {mixed{nonOrig*, (address | date | recipient | name | p | closing | unsure | ps | lb | docHead)*}}
 
 #markup made on text for documentation.
 nonOrig = element nonOrig {style*, type*, ink*, text}
 #elements in above line
-docHead = element docHead {persName*, address*, date*}
+docHead = element docHead { (lb | persName | date | address)*}
 address = element address {addLine*, name*, text}
 addLine = element addLine {name*, type, text}
 #elements in above line
 
-date = element date {when, text} 
+date = element date {when, rend?, text}
+rend = attribute rend {text}
 #element in above line
 recipient = element recipient {persName, name*, address}
 
@@ -49,6 +50,10 @@ ps = element ps {note, text}
 note = element note {style, ink, persName*, text}
 
 unsure = element unsure {type, text}
+
+lb = element lb {type?, mixed{( unclear | address | date | name | persName | dolAmount | addLine | corr)*}}
+unclear = element unclear {empty}
+corr = element corr {rend, text}
 
 n = attribute n {xsd:integer}
 pers = attribute pers { "#GWW" | "#WHJr" | "#AW" | "#BEC" | "#MB" | "#EWN" | "#WPG" | "#JCS" | "#NAC" | "#HCM" | "#WMC" | "#Emmet" | "#ETK" | "#HLK" | "#HSO" | "#CDK" | "#ELK" | "#IHK" | "#HAA" | "#RHA" | "#LWB" | "#Unknown"}
