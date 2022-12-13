@@ -31,7 +31,7 @@ date = element date {when, text}
 #element in above line
 recipient = element recipient {persName, name*, address}
 
-persName = element persName {pers?, xmlid?, text}
+persName = element persName {pers?, text}
 #element in above line
 
 name = element name {type?, text}
