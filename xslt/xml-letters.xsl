@@ -5,17 +5,17 @@
 
     <xsl:variable name="xmlLetter" as="document-node()+" select="collection('../xml/?select=*.xml')[not(contains(base-uri(), 'advisory'))]"/>
     
-    <xsl:variable name="xmlImage" as="document-node()+" select="collection('../docs/documents/?select=*.PNG')"/>
+    <xsl:variable name="xmlImage" as="document-node()+" select="collection('../docs/output/documents/?select=*.PNG')"/>
 
 
     <xsl:template match="/">
         <xsl:for-each select="$xmlLetter">
             
             <xsl:variable name="currentLetter" as="document-node()" select="current()"/>
-            <xsl:variable name="currentImage" as="xs:string" select="$currentLetter ! base-uri() ! substring-after(., 'xml/') !substring-before(., '.xml')"/>
+            <xsl:variable name="matchString" as="xs:string" select="$currentLetter ! base-uri() ! substring-after(., 'xml/') !substring-before(., '.xml')"/>
             
             
-            <xsl:result-document method="xhtml" html-version="5" omit-xml-declaration="yes" include-content-type="no" indent="yes" href="{$currentLetter ! base-uri() ! tokenize(., '/')[last()] ! substring-before(., '.xml')}Output.html"> <!-- ws:12/2/2022 - The output for html should be one of the already existing html files in /docs/output -->
+            <xsl:result-document method="xhtml" html-version="5" omit-xml-declaration="yes" include-content-type="no" indent="yes" href="../docs/output/{$currentLetter ! base-uri() ! tokenize(., '/')[last()] ! substring-before(., '.xml')}Output.html"> <!-- ws:12/2/2022 - The output for html should be one of the already existing html files in /docs/output -->
                 <html>
                     <head>
                         <meta charset="UTF-8"/>
@@ -31,34 +31,74 @@
                             <a href="../gallery.html">Gallery</a>
                             <a href="../about.html">About the Team</a>
                         </nav>
-                        <h2>
-                            <xsl:value-of select="$currentLetter//docTitle"/>, <xsl:value-of select="$currentLetter//docHead"/>   
-                        </h2>
-                        <div>
-                            <xsl:apply-templates/>
-                        </div>
                         
-                        <img src="documents/{$currentImage}.PNG"/>
-                        
-                        
-                        
-                        <!-- ws-12/7/22: This Makes Images from an If-Else statement (xsl:choose)-->
-                        <!--<xsl:choose>
-                            <xsl:when test="$currentLetter//page/@n">
-                                <!-\-We have multiple images: <xsl:value-of select="$currentLetter//page/@n"/>-\-> 
-                                <xsl:for-each select="$currentLetter//page/@n">
-                                    <img src="documents/{$currentImage}_page{current()}.PNG"/>
-                                </xsl:for-each>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <img src="documents/{$currentImage}.PNG"/>
-                            </xsl:otherwise>
-                        </xsl:choose>-->
+                        <section id="contain">
+                            <div id="text">
+                                <xsl:apply-templates/>
+                            </div>
+                            <div id="images">
+                                <!--<xsl:for-each select="collection('../docs/output/documents/?select=*.PNG')[base-uri() ! contains(., $matchString)]">
+                                    <figure>
+                                        <img src="documents/{current() ! base-uri() ! tokenize(., '/')[last()]}" alt="Page Image from {$currentLetter//docTitle}"/>
+                                        <figcaption>Page Image from 
+                                            <xsl:value-of select="$currentLetter//docTitle"/>
+                                        </figcaption>
+                                    </figure>
+                                    
+                                </xsl:for-each>-->
+                            </div>
+                        </section>
                     </body>
                 </html>
             </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
 
+<xsl:template match="header">
+    <h2>
+        <xsl:apply-templates select="docTitle"/>
+    </h2>
+    <h3>
+        <xsl:apply-templates select="docAuthor"/>
+    </h3>
+    <h4>
+        <xsl:apply-templates select="docType"/>
+    </h4>
+    <h5>
+        <xsl:apply-templates select="docDate"/>
+    </h5>
+</xsl:template>
 
+<xsl:template match="body">
+    <section id="sourceText">
+        <xsl:apply-templates/>
+    </section>
+</xsl:template>
+    
+<xsl:template match="docHead | recipient">
+    <p>
+        <xsl:apply-templates/>
+    </p>
+</xsl:template>
+<xsl:template match="p">
+    <p>
+        <span class="num">
+            <xsl:value-of select="@n"/>
+        </span>
+        <xsl:apply-templates/>
+    </p>
+</xsl:template>
+<xsl:template match="addLine | lb">
+    <xsl:variable name="curLine" select="current()" as="element()"/>
+    <span class="num"><xsl:value-of select="count(preceding::*[name()=$curLine ! name()])"/></span><xsl:apply-templates/><br/>
+</xsl:template>    
+    
+<xsl:template match="persName">
+    <a class="pers" href="advisory_board_xx-xx-57Output.html#{@pers}">
+        <xsl:apply-templates/>
+    </a>
+</xsl:template>
+      
+    
+    
 </xsl:stylesheet>
