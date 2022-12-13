@@ -13,7 +13,7 @@
         <page n="1">
             <docHead>
                 <lb>1948 Notes from First year</lb>
-                <lb><persName pers="Lou Balmer">Lou Balmer</persName> I</lb>
+                <lb><persName pers="#LWB">Lou Balmer</persName> I</lb>
             </docHead>
             <lb>= UPSTAIRS of <name type="building">Turnbull</name> still a barn</lb>
             <lb>= Classrooms "perhaps on order y 20x20</lb>
@@ -33,14 +33,14 @@
             <lb>They all worked together trying to make everything</lb>
             <lb>easy for the new school.</lb>
 
-            <lb><persName>DAVID</persName> <unclear/> (Farm U.PK. -ED NoTG. <unclear/>)</lb>
+            <lb><persName pers="#Unknown">DAVID</persName> <unclear/> (Farm U.PK. -ED NoTG. <unclear/>)</lb>
             <lb>Spoke to thhe new faculty before the classes began</lb>
             <lb>and told them that.... Their "responsibility as</lb>
             <lb>members was to teach and relate to the community.</lb>
         </page>
 
         <page n="2">
-            <docHead> <persName pers="Lou Balmer">Balmer</persName> II </docHead>
+            <docHead> <persName pers="#LWB">Balmer</persName> II </docHead>
             <lb>3. = Girls wore skirts at supper + men who came</lb>
             <lb>to eat had to wear coats.</lb>
             <lb>= Telephone receptionist <unclear/> the front door. She</lb>
@@ -66,7 +66,7 @@
         </page>
 
         <page n="3">
-            <docHead> <persName pers="Lou Balmer">Balmer</persName> III </docHead>
+            <docHead> <persName pers="#LWB">Balmer</persName> III </docHead>
             <lb>7. = SPCH CLINIC = base of homes. _They were not students</lb>
             <lb>They were trained to speak correctly.</lb>
             <lb>Spch + hearing <unclear/></lb>
@@ -89,7 +89,7 @@
         </page>
 
         <page n="4">
-            <docHead> <persName pers="Lou Balmer">Balmer</persName> IV </docHead>
+            <docHead> <persName pers="#LWB">Balmer</persName> IV </docHead>
             <lb>14 ..... to prevent the effects of the union, faculty</lb>
             <lb>members had to be in on a decision <unclear/></lb>
             <lb>.... as long as faculty members were <unclear/> in that</lb>
