@@ -32,7 +32,7 @@ rend = attribute rend {text}
 #element in above line
 recipient = element recipient {persName, name*, address}
 
-persName = element persName {pers?, text}
+persName = element persName {pers, text}
 #element in above line
 
 name = element name {type?, text}
