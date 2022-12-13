@@ -34,9 +34,9 @@
                         <h2>
                             <xsl:value-of select="$currentLetter//docTitle"/>, <xsl:value-of select="$currentLetter//docHead"/>   
                         </h2>
-                        <p>
+                        <div>
                             <xsl:apply-templates/>
-                        </p>
+                        </div>
                         
                         <!-- ws-12/7/22: This Makes Images from an If-Else statement (xsl:choose)-->
                         <xsl:choose>
@@ -50,9 +50,6 @@
                                 <img src="documents/{$currentImage}.PNG"/>
                             </xsl:otherwise>
                         </xsl:choose>
-
-
-
                     </body>
                 </html>
             </xsl:result-document>

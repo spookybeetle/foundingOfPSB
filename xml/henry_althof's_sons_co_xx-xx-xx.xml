@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="chart_schema.rnc" type="application/relax-ng-compact-syntax"?>
 <doc>
-    <header> 
+    <header>
     <docTitle>Quotation Form</docTitle>
     <docAuthor>
         <compName>Henry Althof's Sons Co.</compName>
     </docAuthor>
     <docType>Estimation of Total/Reciept</docType>
-    <docDate when=""></docDate>
     </header>
     <body>
         <docHead>
@@ -59,6 +58,6 @@
         <lb>Terms Net 30 Days</lb>
         <left><lb>Respectfully submitted,</lb>
             <lb>Henry Althof's Sons Co.</lb></left> Dated 19 Per <handwritting style="handwriting"
-            ink="blue">Richard H Althof</handwritting>
+            ink="blue"><persName pers="#RHA">Richard H Althof</persName></handwritting>
     </body>
 </doc>

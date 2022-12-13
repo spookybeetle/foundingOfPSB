@@ -6,12 +6,8 @@
         <docAuthor>
             <compName>Henry Altof's Sons Co.</compName>
         </docAuthor>
-<<<<<<< HEAD:xml/henry_althof's_sons_co_04-08-55.xml
         <docType>Invoicing/Reciept</docType>
         <docDate when="1955-06-08">1955-06-08</docDate>
-=======
-        <docDate when="1955-07-08">July 8, 1955</docDate>
->>>>>>> 453ac099fdeadde45e4bffa9b9ea709be21291a1:xml/henry_althof's_sons_co_07-08-55.xml
     </header>
     <body>
         <docHead>
@@ -33,7 +29,7 @@
         </right>
 
         <left>
-            <lb>Your No. <persName pers="Irvin Kochel" prob="misspelled">Mr Cochel</persName></lb>
+            <lb>Your No. <persName pers="#IHK" prob="misspelled">Mr Cochel</persName></lb>
             <lb>Our No. 34375</lb>
             <lb>Terms: Net</lb>
         </left>

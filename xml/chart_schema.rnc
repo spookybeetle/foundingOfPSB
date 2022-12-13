@@ -2,7 +2,7 @@ start = doc
 doc = element doc {header, body}
 #header will contain document information, body will contain the document text.
 
-header = element header {docTitle, docAuthor, docType, docDate, docMaterial*, notes*}
+header = element header {docTitle, docAuthor, docType, docDate?, docMaterial*, notes*}
 
 docTitle = element docTitle {mixed{persName*}}
 #title of the document 
@@ -17,7 +17,7 @@ docMaterial = element docMaterial {text}
 notes = element notes {mixed{persName | name}}
 #extra notes on the document, or writer of the document.
 
-body = element body {(right | left | chart | docHead | lb)*}
+body = element body {(right | left | chart | docHead | lb)*, text, handwriting*}
 
 right = element right {lb+}
 left = element left {lb+}
@@ -26,8 +26,9 @@ docHead = element docHead {(left | right | center)*}
 center = element center {lb+}
 
 #lb used to maintain the specific structure of the documents as they contain charts.
-lb = element lb {type?, mixed{(compType | address | date | name | persName | dolAmount | addLine | company)*}}
+lb = element lb {handwriting*, type?, mixed{(compType | address | date | name | persName | dolAmount | addLine | company)*}}
 
+handwriting = element handwriting {text}
 addLine = element addLine {type, text}
 dolAmount = element dolAmount {currency, text}
 persName = element persName {pers?, prob?, text}
