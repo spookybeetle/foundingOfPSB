@@ -8,10 +8,18 @@
         </docAuthor>
         <docType>List of persons</docType>
         <docDate when="1957">1957</docDate>
-        <notes>A list of all active and retired Behrend Center Advisory Board members as of an
+        <notes>
+            <note>A list of all active and retired Behrend Center Advisory Board members as of an
             unspecified date in 1957. Contains contact information for all active members. The
             stongs of numbers tied to each member appear to be phone numbers, though they do not
-            line up with the current pattern for phone numbers.</notes>
+            line up with the current pattern for phone numbers.</note>
+            <note>Some people mentioned in the papers are not members of the advisory board. These include: 
+                <persName xml:id="HAA">Henry August Althof</persName>, who was Vice President of 
+                <company>vice president of the Henry Althof's Sons Company</company>, a manufacturing company in Erie, PA.
+              His son, <persName xml:id="RHA">Richard H. Althof</persName> signed an invoice made by the family's company, represented in this archive.
+            </note>
+            
+        </notes>
     </header>
     <body>
         <docHead><date when="1957">1957</date> Erie Advisory Board Behrend Center</docHead>
