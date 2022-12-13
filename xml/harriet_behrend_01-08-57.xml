@@ -3,8 +3,8 @@
 <doc>
 
     <header>
-        <docTitle>Letter from <persName>Hariet Sayre</persName> to <persName>Irvin Kochel</persName></docTitle>
-        <docAuthor><persName>Hariet Sayre</persName></docAuthor>
+        <docTitle>Letter from <persName pers = "#Unknown">Hariet Sayre</persName> to <persName pers ="#IHK">Irvin Kochel</persName></docTitle>
+        <docAuthor><persName pers= "#Unknown">Hariet Sayre</persName></docAuthor>
         <docType>Letter</docType>
         <docDate when="1975-08-01">January 8, 1957</docDate>
         <notes>This is a letter from Hariet Sayre to Irvin Kochel regarding a Christmas ceremony
@@ -12,12 +12,12 @@
             trip she will be taking up to Erie in June.</notes>
     </header>
     <body> GLEN COVE 4-0145 GLEN HEAD LONG ISLAND, NEW YORK Jan. 8th, 1957. <recipient>
-            <persName>Mr. Irvin H. Hochel</persName>
+            <persName pers = "#IHK">Mr. Irvin H. Hochel</persName>
             <name type="location">Pennsvlvania State University,</name>
             <name type="location">Behrend Center,</name>
             <address>Erie, Pa.</address>
         </recipient>
-        <p n="1">Dear <persName pers="Irvin Kochel">Mr. Kochel</persName>: I was very interested to
+        <p n="1">Dear <persName pers="#IHK">Mr. Kochel</persName>: I was very interested to
             see the orogram for the Christmas ceremony at <name type="location">Behrend
                 Center</name>. I am looking forward to being in <location>Erie</location> in <time
                 type="Month">June</time>, at which time I hone to have my two sons with me. I do
