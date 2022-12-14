@@ -37,6 +37,9 @@
                                 <xsl:apply-templates/>
                             </div>
                             <div id="images">
+                                <xsl:for-each select="descendant::listImages/image/@href">
+                                    <img src="{current()}" alt=""/>
+                                </xsl:for-each>
                                 <!--<xsl:for-each select="collection('../docs/output/documents/?select=*.PNG')[base-uri() ! contains(., $matchString)]">
                                     <figure>
                                         <img src="documents/{current() ! base-uri() ! tokenize(., '/')[last()]}" alt="Page Image from {$currentLetter//docTitle}"/>
