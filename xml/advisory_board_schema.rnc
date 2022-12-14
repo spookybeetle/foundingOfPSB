@@ -2,7 +2,10 @@ start = doc
 doc = element doc {header, body}
 #header will contain document information, body will contain the document text.
 
-header = element header {docTitle, docAuthor, docType, docDate, docMaterial*, notes*}
+header = element header {docTitle, docAuthor, docType, docDate, docMaterial*, listImages, notes*}
+listImages = element listImages {image+}
+image = element image {href, empty}
+href = attribute href {xsd:anyURI}
 
 docTitle = element docTitle {mixed{persName*}}
 #title of the document 
