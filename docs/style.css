@@ -27,6 +27,20 @@ nav {
     /* margin-top: 160px; */
     margin-bottom: auto;
 }
+
+table { 
+    border-collapse: collapse;
+    border:.5vw solid #301934;
+    margin:auto;
+    
+}
+th, td {padding: 1em; }
+tr:nth-child(odd) {
+    background-color: orange;
+    color: black; 
+    }
+
+
 nav a {
     padding: 0 14px;
 }
