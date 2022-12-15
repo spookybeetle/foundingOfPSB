@@ -38,7 +38,7 @@ address = element address {addLine*}
 addLine = element addLine {type, text}
 company = element company {text}
 
-when = attribute when {xsd:date | xsd:integer}
+when = attribute when {xsd:date | xsd:gYear | xsd:gYearMonth}
 #type attribute used to specify something unique about general element attributes 
 type = attribute type {text}
 #xml:id attribute used to tag identifier on persons

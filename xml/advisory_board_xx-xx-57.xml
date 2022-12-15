@@ -24,19 +24,19 @@
         <docHeadTable>
             <colHead pos="1">Officers:</colHead>
             <colHead pos="5">Home</colHead>
-            <colHead pos="6">Business</colHead>
+            <colHead pos="5">Business</colHead>
         </docHeadTable>
         <persLine><persName xml:id="GWW"><title>President:</title>
                 <name>Guy W. Wilson</name>
                 <title>Gen*l. Mgr. L&amp;CE</title>
-                <date when="1953-08-04">April 8, 1953</date> 553536 536 6/6/57 <address>
+                <date when="1953-08-04">April 8, 1953</date> 553536 536 <date when="1957-06-06">6/6/57</date> <address>
                     <addLine type="street">4145 Beach Ave.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine>
                 </address>
                 <company>General Electric Co.</company> 27-5440 55-461</persName></persLine>
         <persLine><persName xml:id="WHJr"><title>Vice-President</title>-<name>William hamilton, Jr.</name>
                 <company>Hamilton Lumber Co.</company>
-                <date when="1955">May 1955</date> 4-8690 44-536 6/6/57 (3) <address>
+                <date when="1955-05">May 1955</date> 4-8690 44-536 6/6/57 (3) <address>
                     <addLine type="street">315 W. 40 St.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine>
                 </address>
@@ -47,7 +47,7 @@
             </persName></persLine>
         <persLine><persName xml:id="AW"><title>Secretary:</title>
                 <name>Allyn Write</name>
-                <title>Vice President</title> org 22-762 23-693 6/6/57 (3) <address>
+                <title>Vice President</title> org 22-762 23-693 <date when="1957-06-06">6/6/57</date> (3) <address>
                     <addLine type="street">333 W. 7 St.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine>
                 </address>
@@ -59,7 +59,7 @@
             </persName></persLine>
         <persLine><persName xml:id="BEC"><title>Treasurer:</title>
                 <name>Bertram E. Claridge.</name>
-                <title>Vice President</title> org 34-714 47-101 6/6/57 (3) <address>
+            <title>Vice President</title> org 34-714 47-101 <date when="1957-06-06">6/6/57</date> (3) <address>
                     <addLine type="street">R. D. 1, Wolf Rd.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine>
                 </address>
@@ -81,8 +81,8 @@
                     <addLine type="City,State">Erie, Pa. </addLine>
                     <addLine type="street">615 Masonic Bldg.</addLine>
                 </address> 37714</persName></persLine>
-        <persLine><persName xml:id="JCS">(3) 1953 <name>Jerry C. Stokes</name>
-                <title>President</title> nov. 1953 99-2587 57-561 <address>
+        <persLine><persName xml:id="JCS">(3) <date when="1953">1953</date> <name>Jerry C. Stokes</name>
+                <title>President</title> <date when="1953-11">nov. 1953</date> 99-2587 57-561 <address>
                     <addLine type="street">1126 Hilltop Rd.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine>
                 </address><company>Perry Plastics, Inc.</company> 62961 <address>
@@ -104,7 +104,7 @@
                     <addLine type="street">917 W. 6 St.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine>
                 </address></persName></persLine>
-        <persLine><persName xml:id="WMC">(3) 1953 <name>William M. Conner</name> Insurance Nov 1953 98-270 24-585 <address>
+        <persLine><persName xml:id="WMC">(3) <date when="1953">1953</date> <name>William M. Conner</name> Insurance Nov 1953 98-270 24-585 <address>
                     <addLine type="street">1135 Chestnut Hill. Dr.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine>
                 </address> 303-4 Palanco Hdwe. Bldg. Erie, Pa. </persName></persLine>
@@ -124,7 +124,7 @@
                     <addLine type="street">1500 Cascade St.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine>
                 </address></persName></persLine>
-        <persLine><persName xml:id="HLK">(3) 1953 <name>Howard L. Kelly</name>
+        <persLine><persName xml:id="HLK">(3) <date when="1953">1953</date> <name>Howard L. Kelly</name>
                 <title>Secretary_Executive Dir.</title> 25-4291 25-667 <address>
                     <addLine type="street">218 Gridley Ave.,</addLine>
                     <addLine type="City,State">Erie, Pa.</addLine>
