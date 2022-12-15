@@ -4,8 +4,8 @@ html {
     font-size: 16px;
 }
 body {
-    background-color: #FFEECB;
-    margin: 24px auto; 
+    background-color: #B1AACE;
+    margin: 24px auto;
     /* ws11/2/22: left margins are placed on containing element rather
      *  than each individual.*/
     /* ws11/4/22: left (and right) margins switched to auto to center
@@ -14,18 +14,21 @@ body {
     overflow-x: hidden;
 }
 .Title {
-    text-align: left;
+    text-align: center;
     margin-top: 8px;
     margin-right: auto;
     margin-bottom: 12px;
     /*margin-left: 124px;*/
     padding-top: 0px;
+    text-decoration: underline;
 }
 nav {
     /*margin-left: 124px;*/
     margin-right: auto;
     /* margin-top: 160px; */
     margin-bottom: auto;
+    text-align: center;
+    text-decoration: underline;
 }
 
 table { 
@@ -36,13 +39,13 @@ table {
 }
 th, td {padding: 1em; }
 tr:nth-child(odd) {
-    background-color: orange;
+    background-color: #CCC6E6;
     color: black; 
     }
 
 li {padding: 1em; }
 li:nth-child(odd) {
-    background-color: #FFD580;
+    background-color: #CCC6E6;
     color: black; 
     border-collapse: collapse;
     border:.2vw solid #301934;
@@ -50,7 +53,7 @@ li:nth-child(odd) {
     }
 
 li:nth-child(even) {
-    background-color: #FFD580;
+    background-color: #CCC6E6;
     color: black; 
     border-collapse: collapse;
     border:.2vw solid #301934;
@@ -72,6 +75,7 @@ nav a {
     margin-right: auto;
     margin-bottom: 12px;
     margin-top: 12px;
+    text-align: center;
 }
 .gal {
     left: auto;
@@ -88,8 +92,7 @@ nav a {
     margin-top: 0px;
     /*margin-left: 124px;*/
     margin-right: 0px;
-    background-color: #F9D995;
-    /* ws11/2/22: placing a min-width attribute here or on any children of .content elements is a bad idea. The flexibility it has is better than restricting it at a certain size. If the side gallery gets in the way we can  */
+    background-color: #CCC6E6;    /* ws11/2/22: placing a min-width attribute here or on any children of .content elements is a bad idea. The flexibility it has is better than restricting it at a certain size. If the side gallery gets in the way we can  */
 }
 .txt {
     margin: 8px 12px;
@@ -97,14 +100,14 @@ nav a {
     padding-bottom: 11px;
     padding-top: 11px;
     padding-right: 11px;
-    background-color: #FFE6B0;
+    background-color: #DAD4F3;
     box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, .2);
 }
 .gallery {
     margin-left: 12px;
 }
 .gcontain{
-    background-color: #F9D995;    
+    background-color: #CCC6E6;    
 }
 .image {
     padding-left: 7px;
