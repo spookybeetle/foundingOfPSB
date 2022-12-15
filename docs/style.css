@@ -40,6 +40,22 @@ tr:nth-child(odd) {
     color: black; 
     }
 
+li {padding: 1em; }
+li:nth-child(odd) {
+    background-color: #FFD580;
+    color: black; 
+    border-collapse: collapse;
+    border:.2vw solid #301934;
+    margin:auto;
+    }
+
+li:nth-child(even) {
+    background-color: #FFD580;
+    color: black; 
+    border-collapse: collapse;
+    border:.2vw solid #301934;
+    margin:auto;
+    }
 
 nav a {
     padding: 0 14px;
