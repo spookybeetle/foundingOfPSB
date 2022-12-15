@@ -97,7 +97,7 @@
 </xsl:template>    
     
 <xsl:template match="persName">
-    <a class="pers" href="advisory_board_xx-xx-57Output.html#{@pers}">
+    <a class="pers" href="advisory_board_xx-xx-57Output.html{@pers}">
         <xsl:apply-templates/>
     </a>
 </xsl:template>
