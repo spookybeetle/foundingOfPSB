@@ -23,8 +23,8 @@
         <docHead><date when="1957">1957</date> Erie Advisory Board Behrend Center</docHead>
         <docHeadTable>
             <colHead pos="1">Officers:</colHead>
-            <colHead pos="4">Home</colHead>
-            <colHead pos="5">Business</colHead>
+            <colHead pos="5">Home</colHead>
+            <colHead pos="6">Business</colHead>
         </docHeadTable>
         <persLine><persName xml:id="GWW"><title>President:</title>
                 <name>Guy W. Wilson</name>

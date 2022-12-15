@@ -24,29 +24,38 @@
                 -->
                 <section id="contain">
                     <div id="text">
-                        <!--<xsl:apply-templates/>-->
+                        <h2><xsl:apply-templates select=".//docHead"/></h2>
                         <table>
                             <tr>
-                                <xsl:apply-templates select="docHeadTable"/>
-                                <!--<th>Letter Date</th>
-                                <th>People Mentioned</th>
-                                <th>Places Mentioned</th>-->
+                                <xsl:apply-templates select=".//docHeadTable"/>
                             </tr>
-                            <xsl:apply-templates select="body" mode="toc"/>
+                            <xsl:apply-templates select=".//persLine"/>
                         </table>
                     </div>
-                    <!--<div id="images">
+                    <div id="images">
                         <xsl:for-each select="descendant::listImages/image/@href">
                             <img src="{current()}" alt=""/>
                         </xsl:for-each>
-                    </div>-->
+                    </div>
                 </section>
             </body>
         </html>
     </xsl:template>
     
-    <xsl:template match="">
-        <xsl:apply-templates select="colHead"/>
+    <xsl:template match="docHeadTable">
+        <th>
+            <xsl:apply-templates select="colHead[@pos='1']"/>
+        </th>
+        <th>Name</th>
+        <th>Company Title</th>
+        <th>Dates Associated</th>
+        <th>
+            <xsl:apply-templates select="colHead[@pos='5']"/>
+        </th>
+        <th>
+            <xsl:apply-templates select="colHead[@pos='6']"/>
+        </th>
+        <th>Letter List</th>
     </xsl:template>
     
     
@@ -65,38 +74,23 @@
         </h5>
     </xsl:template>
     
-    <xsl:template match="body" mode="toc">
+    <xsl:template match="persLine">
         <tr>
-            <td><a href="#{@xml:id}"><!-- This is the internal link --><xsl:apply-templates select="@xml:id"/></a>: <xsl:value-of select=".//p[1] ! substring(., 1, 80)"/>
+            <td>
+                <xsl:apply-templates select=".//title[1]"/>
             </td>
             <td>
-                <xsl:value-of select="descendant::placeName ! normalize-space() => distinct-values() => sort() => string-join(', ')"/>
+                <xsl:apply-templates select=".//name[1]"/>
             </td>
             <td>
-                <xsl:value-of select="descendant::persName ! normalize-space() => distinct-values() => sort() => string-join(', ')"/>
+                <xsl:apply-templates select=".//title[2]"/>
             </td>
+            <td>
+                <xsl:apply-templates select=".//date ! string-join(., ', ')"/>
+            </td>
+            
         </tr>
     </xsl:template>
-    <xsl:template match="body">
-        <div id="{@xml:id}">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-               
-            
-            <!--<td>
-                <a href="#{@xml:id}"><!-\- This is the internal link -\->
-                    <xsl:apply-templates select="@xml:id"/>
-                </a>: <xsl:value-of select=".//p[1] ! substring(., 1, 80)"/>
-            </td>
-            <td>
-                <xsl:value-of select="descendant::placeName ! normalize-space() => distinct-values() => sort() => string-join(', ')"/>
-            </td><!-\-
-            <td>
-                <xsl:value-of select="descendant::persName ! normalize-space() => distinct-values() => sort() => string-join(', ')"/>
-            </td>-\->
-            -->
-        
     
         
 
