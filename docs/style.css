@@ -129,6 +129,28 @@ nav a {
 
 #contain {
     display: flex;
+    margin: 2rem auto;
+    max-width: 1920px;
+}
+
+#text {
+    width: 40%;
+    padding: 0 1rem;
+}
+
+#images {
+    width: 60%;
+    padding: 0 1rem;
+}
+
+#images img {
+    min-width: 250px;
+    max-width: 100%;
+}
+
+.num {
+    padding: 0 .25rem;
+    font-weight: bold;
 }
 
 /* ! ws11/2/22: these media queries really dont work well. They don't pair well with the left margins. Both should be revised for a better look.*/
@@ -141,6 +163,7 @@ nav a {
         width: 20vw;
     }
 }
+
 @media (max-width: 700px) {
     body {
         margin: 12px;
@@ -148,6 +171,17 @@ nav a {
     .image {
         width: 15vw;
     }
+    #contain {
+        display: block;
+    }
+    #text {
+    width: unset;
+    
+}
+    #images {
+    width: unset;
+    margin: 1rem 0;
+}
     /*.main {
         display: block; 
     }

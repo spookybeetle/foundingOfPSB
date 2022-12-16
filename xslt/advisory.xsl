@@ -22,7 +22,7 @@
                 </nav>
                 
                 <section>
-                    <div id="text">
+                    <div id="advtext">
                         <h2><xsl:apply-templates select=".//docHead"/></h2>
                         <h3>The information below was remixed from the original source. This data is what we have collected so far:</h3>
                         <table>

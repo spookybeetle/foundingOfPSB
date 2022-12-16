@@ -37,7 +37,7 @@
                             </div>
                             <div id="images">
                                 <xsl:for-each select="descendant::listImages/image/@href">
-                                    <img src="{current()}" alt=""/>
+                                    <img src="documents/{current()}" alt=""/>
                                 </xsl:for-each>
                                 <!--<xsl:for-each select="collection('../docs/output/documents/?select=*.PNG')[base-uri() ! contains(., $matchString)]">
                                     <figure>
@@ -96,9 +96,18 @@
 </xsl:template>    
     
 <xsl:template match="persName">
-    <a class="pers" href="advisory_board_xx-xx-57Output.html{@pers}">
-        <xsl:apply-templates/>
-    </a>
+    <xsl:choose>
+        <xsl:when test="//@pers='#Unknown'">
+            <a class="pers" title="Unknown">
+                <xsl:apply-templates/>
+            </a>
+        </xsl:when>
+        <xsl:otherwise>
+            <a class="pers" href="advisory_board_xx-xx-57Output.html{@pers}">
+                <xsl:apply-templates/>
+            </a>
+        </xsl:otherwise>
+    </xsl:choose>
 </xsl:template>
       
     
