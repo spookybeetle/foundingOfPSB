@@ -97,7 +97,7 @@
     
 <xsl:template match="persName">
     <xsl:choose>
-        <xsl:when test="//@pers='#Unknown'">
+        <xsl:when test="@pers='#Unknown'">
             <a class="pers" title="Unknown">
                 <xsl:apply-templates/>
             </a>

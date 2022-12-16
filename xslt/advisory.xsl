@@ -35,7 +35,7 @@
                     </div>
                     <div id="images">
                         <xsl:for-each select="descendant::listImages/image/@href">
-                            <img src="{current()}" alt=""/>
+                            <img src="documents/{current()}" alt=""/>
                         </xsl:for-each>
                     </div>
                 </section>

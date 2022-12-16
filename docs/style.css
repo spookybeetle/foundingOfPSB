@@ -94,6 +94,7 @@ nav a {
     margin-right: 0px;
     background-color: #CCC6E6;    /* ws11/2/22: placing a min-width attribute here or on any children of .content elements is a bad idea. The flexibility it has is better than restricting it at a certain size. If the side gallery gets in the way we can  */
 }
+.content h3 {margin-left: .5rem;}
 .txt {
     margin: 8px 12px;
     padding-left: 11px;
